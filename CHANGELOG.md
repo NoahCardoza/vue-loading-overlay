@@ -1,5 +1,26 @@
 # Changelog
+All notable changes to this project will be documented in this file.
 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+### [3.0.0](https://github.com/ankurk91/vue-loading-overlay/compare/2.2.1...3.0.0) (breaking)
+* Changed: 
+    - use SVG instead of CSS animation
+    - rename `animation` prop to `transition`
+    - rename `close` event to `hide`
+    - `onCancel` callback will be called only when cancelled by user
+    - use `v-show` instead of `v-if`
+* Added: see docs for usage
+    - add `loader` prop
+    - add `color` prop
+    - add `backgroundColor` prop
+    - add optional second argument to `$loading.show(props?,slots?)`     
+* Removed: 
+    - `$loaderColor` scss variable
+* Other:
+    - live example available on gh-pages    
+    
 ### [2.2.1](https://github.com/ankurk91/vue-loading-overlay/compare/2.2.0...2.2.1) 
 * Fix: regression in trap focus feature
 * Fix: regression in `z-index` issue
